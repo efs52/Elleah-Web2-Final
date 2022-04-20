@@ -22,6 +22,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/about.jpg" : {
+      "ft" : 16384,
+      "iS" : 252641,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/about.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/Andriod.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -551,7 +564,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 670365424.92247903,
-    "displayValue" : "template",
+    "displayValue" : "Joe Web2 Demo",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-tar",
     "iconImageWasSetByUser" : 0

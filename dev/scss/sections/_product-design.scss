@@ -6,5 +6,10 @@
 .product-design{
     img{
         width:100%;
+        display:none;
+
+        @include md{
+            display:block;
+        }
     }
 }

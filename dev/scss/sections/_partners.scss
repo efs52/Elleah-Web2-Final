@@ -4,11 +4,67 @@
 
 
 .partners{
-   
+margin-top: 100px;
+margin-bottom: 100px;
     .partners-content{
         ul{
             display:grid;
             gap:20px;
+            list-style: none;
+            padding: 0;
+
+            @include md{
+                grid-template-columns: 50% 50%;
+
+            }
+
+            @include lg{
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-areas: 
+                "p1 p1 p1 p1 p1 p2 p2 p2 p3 p3"
+                "p4 p4 p5 p5 p5 p5 p5 p6 p6 p6";
+            }
+
+            li{
+                background-color:aqua;
+                padding:20px;
+            }
+
+            .p1{
+                @include lg{
+                    grid-area:p1;
+                }
+            }
+
+            .p2{
+                @include lg{
+                    grid-area:p2;
+                }
+            }
+
+            .p3{
+                @include lg{
+                    grid-area:p3;
+                }
+            }
+
+            .p4{
+                @include lg{
+                    grid-area:p4;
+                }
+            }
+
+            .p5{
+                @include lg{
+                    grid-area:p5;
+                }
+            }
+
+            .p6{
+                @include lg{
+                    grid-area:p6;
+                }
+            }
         }
     }
 }
