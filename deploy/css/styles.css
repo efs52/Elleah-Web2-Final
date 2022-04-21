@@ -402,16 +402,22 @@ header .content {
 footer .content {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "logo copyright" "logo josh";
+  grid-template-areas: "logo josh" "logo copyright";
+}
+@media (min-width: 768px) {
+  footer .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo josh copyright";
+  }
 }
 footer .content img {
   grid-area: logo;
 }
 footer .content h3 {
-  grid-area: copyright;
+  grid-area: josh;
 }
 footer .content p {
-  grid-area: josh;
+  grid-area: copyright;
 }
 
 .hero img {
@@ -421,14 +427,19 @@ footer .content p {
 /* =============
     Product Design
 ============= */
+@media (min-width: 768px) {
+  .product-design.container {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 992px) {
+  .product-design.container .content {
+    display: grid;
+    grid-template-columns: 45% auto;
+  }
+}
 .product-design img {
   width: 100%;
-  display: none;
-}
-@media (min-width: 768px) {
-  .product-design img {
-    display: block;
-  }
 }
 
 /* =============

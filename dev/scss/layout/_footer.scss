@@ -9,20 +9,27 @@ footer{
         display:grid;
         grid-template-columns: 50% 50%;
         grid-template-areas: 
-        "logo copyright"
         "logo josh"
+        "logo copyright"
         ;
+
+        @include md{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "logo josh copyright"
+            ;
+        }
 
         img{
             grid-area:logo;
         }
 
         h3{
-            grid-area:copyright;
+            grid-area:josh;
         }
 
         p{
-            grid-area:josh;
+            grid-area:copyright;
         }
 
     }

@@ -4,12 +4,23 @@
 
 
 .product-design{
-    img{
-        width:100%;
-        display:none;
+
+    &.container{
 
         @include md{
-            display:block;
+            grid-template-columns: 10% auto 10%;
         }
+
+        .content{
+            
+            @include lg{
+                display: grid;
+                grid-template-columns: 45% auto;
+            }
+        }
+    }
+
+    img{
+        width:100%;
     }
 }
